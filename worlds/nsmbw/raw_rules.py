@@ -23,6 +23,8 @@ class HasSC(Rule["NSMBWworld"], game = game_name):
 def specific_hintmovie_requierments() -> List:
     # info about these harvested from https://gamefaqs.gamespot.com/wii/960544-new-super-mario-bros-wii/faqs/58584
 
+    # TODO: hint movies unlock based on sc count * shop mult; logic should reflect this
+    # e.g. movie 2 requires 5 sc, but if shop mult is 2, it would only require 3 sc, so logic should reflect this
     requierments : list = [
         #starcoin cost, level requierment, generic requierment
         [3, (1,1), True_()],   #01

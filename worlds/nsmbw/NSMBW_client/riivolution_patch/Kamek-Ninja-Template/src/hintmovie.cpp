@@ -20,6 +20,13 @@ kmBranchDefCpp(0x80792f50, 0x80792fe8, void, int param_1)
     return;
 }
 
+// Total star coins used for hint movie unlock thresholds.
+// E2: 0x80795e50 / blr 0x80795ec8
+kmBranchDefCpp(0x80795e10, 0x80795e88, void, int param_1)
+{
+    *(int *)(param_1 + 0xAAC) = *(volatile int *)0x80BBB028;
+}
+
 /*
 // makes all levels selectable, doesnt work
 kmBranchDefAsm(0x80796204,0x80796208)
